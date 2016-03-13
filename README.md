@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/keisei1092/electron-vocarankviewer.png?label=ready&title=Ready)](https://waffle.io/keisei1092/electron-vocarankviewer)
 # electron-quick-start
 
 **Clone and run for a quick way to see an Electron in action.**
