@@ -25,7 +25,7 @@ function createWindow () {
     'always-on-top': true,
     'web-preferences': {
       'plugins': true
-    }
+    },
   });
 
   // and load the index.html of the app.

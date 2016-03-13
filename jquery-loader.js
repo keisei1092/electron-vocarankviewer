@@ -1,0 +1,1 @@
+window.jQuery = window.$ = require("./jquery-1.12.1.min.js");
