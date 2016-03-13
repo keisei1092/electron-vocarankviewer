@@ -2,12 +2,10 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Hello World!</title>
+    <title>vocarankviewer</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
-    <h1>Hello World!</h1>
-    We are using node <script>document.write(process.versions.node)</script>,
-    Chromium <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>.
+    <webview id="external-site" src="http://www.nicovideo.jp/ranking/fav/daily/vocaloid" style="width: 2500px; height: 1500px;" plugins></webview>
   </body>
 </html>

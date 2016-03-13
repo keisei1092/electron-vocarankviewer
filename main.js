@@ -3,6 +3,8 @@
 const electron = require('electron');
 // Module to control application life.
 const app = electron.app;
+app.commandLine.appendSwitch('ppapi-flash-path', 'PepperFlashPlayer.plugin');
+app.commandLine.appendSwitch('ppapi-flash-version', '21.0.0.182');
 // Module to create native browser window.
 const BrowserWindow = electron.BrowserWindow;
 
@@ -12,13 +14,27 @@ let mainWindow;
 
 function createWindow () {
   // Create the browser window.
-  mainWindow = new BrowserWindow({width: 800, height: 600});
+  mainWindow = new BrowserWindow({
+    width: 400,
+    height: 230,
+    x: 1015,
+    y: 640,
+    transparent: true,
+    frame: false,
+    resizable: true,
+    'always-on-top': true,
+    'web-preferences': {
+      'plugins': true
+    }
+  });
 
   // and load the index.html of the app.
   mainWindow.loadURL('file://' + __dirname + '/index.html');
 
   // Open the DevTools.
   mainWindow.webContents.openDevTools();
+  mainWindow.webContents.closeDevTools();
+
 
   // Emitted when the window is closed.
   mainWindow.on('closed', function() {

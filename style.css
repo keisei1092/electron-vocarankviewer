@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-app-region: drag;
+  -webkit-user-select: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  transform-origin: left top;
+  transform: scale(0.6);
+}
+
+webview { 
+  opacity: 0.4;
+}
